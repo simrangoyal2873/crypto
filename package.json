@@ -1,4 +1,5 @@
 {
+  "homepage": " https://simrangoyal2873.github.io/crypto",
   "name": "project",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +14,7 @@
     "axios": "^1.7.7",
     "chart.js": "^4.3.0",
     "firebase": "^10.0.0",
+    "gh-pages": "^6.3.0",
     "react": "^18.3.1",
     "react-alice-carousel": "^2.7.1",
     "react-axios": "^2.0.6",
@@ -26,6 +28,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
